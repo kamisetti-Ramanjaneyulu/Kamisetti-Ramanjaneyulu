@@ -23,7 +23,7 @@ const Login = () => {
       // Check if the user's email matches the admin email
       if (user.email === 'testadmin@gmail.com') {
         // User is an admin
-        navigate('/AddJob');
+        navigate('/home');
       } else {
         // User is not an admin
         throw new Error('Only for admin');

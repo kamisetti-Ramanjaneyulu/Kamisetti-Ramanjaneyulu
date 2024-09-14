@@ -61,11 +61,11 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 sticky space-y-1 sm:px-3">
-            <NavLinkMobile to="/AddJob" onClick={toggleMenu}>
-              AddJob
+            <NavLinkMobile to="/home" onClick={toggleMenu}>
+              home
             </NavLinkMobile>
-            <NavLinkMobile to="/AddBlog" onClick={toggleMenu}>
-              AddBlogs
+            <NavLinkMobile to="/Add" onClick={toggleMenu}>
+              AddNotice
             </NavLinkMobile>
             
            
