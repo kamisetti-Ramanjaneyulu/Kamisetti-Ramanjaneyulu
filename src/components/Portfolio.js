@@ -292,7 +292,7 @@ const Portfolio = () => {
             <Project 
               title="Face Recognition from Dataframes Using ML"
               description="Implemented a machine learning model for facial recognition using Python and IDLE-Python for development and testing."
-              tags={['Python', 'Machine Learning', 'OpenCV']}
+              tags={['Python', 'Machine Learning']}
               link={null}
             />
           </div>
