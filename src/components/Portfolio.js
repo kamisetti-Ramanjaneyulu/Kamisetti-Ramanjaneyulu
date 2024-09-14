@@ -96,12 +96,12 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-indigo-50 dark:from-gray-900 dark:to-indigo-900 text-gray-800 dark:text-gray-200 transition-colors duration-500">
-      <nav className="bg-white dark:bg-gray-800 shadow-lg fixed w-full z-10 transition-colors duration-500">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-indigo-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 transition-colors duration-500">
+      <nav className="bg-white dark:bg-gray-900 shadow-lg fixed w-full z-10 transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <span className="font-bold text-xl text-indigo-600 dark:text-indigo-400">Ashritha Ankola</span>
+              <span className="font-bold text-xl text-indigo-600 dark:text-blue-400">Ashritha Ankola</span>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
@@ -111,8 +111,8 @@ const Portfolio = () => {
                     onClick={() => scrollToSection(section)}
                     className={`${
                       activeSection === section
-                        ? 'bg-indigo-500 text-white'
-                        : 'text-gray-300 hover:bg-indigo-500 hover:text-white'
+                        ? 'bg-indigo-500 dark:bg-blue-600 text-white'
+                        : 'text-gray-300 hover:bg-indigo-500 dark:hover:bg-blue-700 hover:text-white'
                     } px-3 py-2 rounded-md text-sm font-medium capitalize transition-all duration-300`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -127,7 +127,7 @@ const Portfolio = () => {
       </nav>
 
       <motion.header 
-        className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white pt-32 pb-20 px-4 sm:px-6 lg:px-8"
+        className="bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-blue-800 dark:to-purple-900 text-white pt-32 pb-20 px-4 sm:px-6 lg:px-8"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -157,7 +157,7 @@ const Portfolio = () => {
           >
             <motion.a 
               href="mailto:Ashritha.ankola236@gmail.com" 
-              className="flex items-center bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-indigo-100"
+              className="flex items-center bg-white text-indigo-600 dark:bg-gray-800 dark:text-blue-400 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-700"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -165,7 +165,7 @@ const Portfolio = () => {
             </motion.a>
             <motion.a 
               href="tel:+916281456359" 
-              className="flex items-center bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-indigo-100"
+              className="flex items-center bg-white text-indigo-600 dark:bg-gray-800 dark:text-blue-400 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-700"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -175,7 +175,7 @@ const Portfolio = () => {
               href="https://www.linkedin.com/in/ashritha-ankola-14670724a/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-indigo-100"
+              className="flex items-center bg-white text-indigo-600 dark:bg-gray-800 dark:text-blue-400 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-700"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -185,7 +185,7 @@ const Portfolio = () => {
               href="https://github.com/AshrithaAnkola" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-indigo-100"
+              className="flex items-center bg-white text-indigo-600 dark:bg-gray-800 dark:text-blue-400 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-indigo-100 dark:hover:bg-gray-700"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -203,8 +203,8 @@ const Portfolio = () => {
           animate={{ opacity: isVisible.about ? 1 : 0, y: isVisible.about ? 0 : 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-indigo-400">About Me</h2>
-          <Alert className="mb-6">
+          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-blue-400">About Me</h2>
+          <Alert className="mb-6 dark:bg-gray-800 dark:border-blue-500 dark:text-blue-300">
             <AlertTitle>Welcome to my portfolio!</AlertTitle>
             <AlertDescription>
               I'm a motivated and detail-oriented Computer Science graduate with a strong foundation in full-stack web development. 
@@ -212,17 +212,16 @@ const Portfolio = () => {
               organizational goals while fostering personal growth.
             </AlertDescription>
           </Alert>
-          <p className="text-lg text-center leading-relaxed">
+          <p className="text-lg text-center leading-relaxed dark:text-gray-300">
             With a passion for creating efficient and user-friendly web applications, I strive to stay up-to-date with the latest 
             technologies and best practices in the ever-evolving field of web development.
           </p>
           <div className="mt-6 text-center">
-            <p className="text-lg flex items-center justify-center">
+            <p className="text-lg flex items-center justify-center dark:text-gray-300">
               <Calendar size={20} className="mr-2" /> Born on December 11, 2001
             </p>
           </div>
         </motion.section>
-
 
         <motion.section 
           id="experience" 
@@ -231,28 +230,28 @@ const Portfolio = () => {
           animate={{ opacity: isVisible.experience ? 1 : 0, y: isVisible.experience ? 0 : 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 dark:text-blue-400">Work Experience</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-blue-400">Work Experience</h2>
           <div className="space-y-8">
-            <Card className="transition-all duration-300 hover:shadow-xl">
+            <Card className="transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:text-gray-200">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Full Stack Web Developer</CardTitle>
-                <CardDescription>MARKATLAS INKJET TECHNOLOGIES PVT LTD. | June 2024 - Present</CardDescription>
+                <CardDescription className="dark:text-gray-400">MARKATLAS INKJET TECHNOLOGIES PVT LTD. | June 2024 - Present</CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="list-disc list-inside space-y-2">
+                <ul className="list-disc list-inside space-y-2 dark:text-gray-300">
                   <li>Developing and maintaining real-time projects using ReactJS, Firebase, and Tailwind CSS</li>
                   <li>Collaborating with cross-functional teams to implement new features and improve existing functionality</li>
                   <li>Optimizing application performance and ensuring responsive design across various devices</li>
                 </ul>
               </CardContent>
             </Card>
-            <Card className="transition-all duration-300 hover:shadow-xl">
+            <Card className="transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:text-gray-200">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Web Development Intern</CardTitle>
-                <CardDescription>INNOMATICS RESEARCH LABS | February 2023 - August 2023</CardDescription>
+                <CardDescription className="dark:text-gray-400">INNOMATICS RESEARCH LABS | February 2023 - August 2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="list-disc list-inside space-y-2">
+                <ul className="list-disc list-inside space-y-2 dark:text-gray-300">
                   <li>Completed comprehensive training in web development, progressing from basic to advanced concepts</li>
                   <li>Gained hands-on experience in developing dynamic web pages using modern technologies</li>
                   <li>Participated in team projects, enhancing collaboration and communication skills</li>
@@ -269,7 +268,7 @@ const Portfolio = () => {
           animate={{ opacity: isVisible.projects ? 1 : 0, y: isVisible.projects ? 0 : 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-indigo-400">Projects</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-blue-400">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Project 
               title="Employee Management System (EMS)"
@@ -305,10 +304,10 @@ const Portfolio = () => {
           animate={{ opacity: isVisible.skills ? 1 : 0, y: isVisible.skills ? 0 : 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-indigo-400">Skills</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-blue-400">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Technical Skills</h3>
+              <h3 className="text-2xl font-bold mb-4 dark:text-gray-200">Technical Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {['Python', 'JavaScript', 'ReactJS', 'Node.js', 'HTML5/CSS3', 'Firebase', 'Tailwind CSS'].map((skill) => (
                   <SkillBadge key={skill} skill={skill} />
@@ -316,7 +315,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">Soft Skills</h3>
+              <h3 className="text-2xl font-bold mb-4 dark:text-gray-200">Soft Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {['Team Collaboration', 'Problem Solving', 'Communication', 'Time Management', 'Adaptability', 'Critical Thinking', 'Creativity'].map((skill) => (
                   <SkillBadge key={skill} skill={skill} />
@@ -333,33 +332,33 @@ const Portfolio = () => {
           animate={{ opacity: isVisible.education ? 1 : 0, y: isVisible.education ? 0 : 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 dark:text-blue-400">Education</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-blue-400">Education</h2>
           <div className="space-y-8">
-            <Card className="transition-all duration-300 hover:shadow-xl">
+            <Card className="transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:text-gray-200">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Bachelor of Technology (CSE)</CardTitle>
-                <CardDescription>JNTUH University College of Engineering, Manthani | 2019 - 2023</CardDescription>
+                <CardDescription className="dark:text-gray-400">JNTUH University College of Engineering, Manthani | 2019 - 2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="font-semibold">CGPA: 7.39</p>
+                <p className="font-semibold dark:text-blue-300">CGPA: 7.39</p>
               </CardContent>
             </Card>
-            <Card className="transition-all duration-300 hover:shadow-xl">
+            <Card className="transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:text-gray-200">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Intermediate</CardTitle>
-                <CardDescription>Narayana Junior College, Hyderabad | 2017 - 2019</CardDescription>
+                <CardDescription className="dark:text-gray-400">Narayana Junior College, Hyderabad | 2017 - 2019</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="font-semibold">Percentage: 96.10%</p>
+                <p className="font-semibold dark:text-blue-300">Percentage: 96.10%</p>
               </CardContent>
             </Card>
-            <Card className="transition-all duration-300 hover:shadow-xl">
+            <Card className="transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:text-gray-200">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Matriculation</CardTitle>
-                <CardDescription>Emily The School, Hyderabad | 2016 - 2017</CardDescription>
+                <CardDescription className="dark:text-gray-400">Emily The School, Hyderabad | 2016 - 2017</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="font-semibold">CGPA: 9.2</p>
+                <p className="font-semibold dark:text-blue-300">CGPA: 9.2</p>
               </CardContent>
             </Card>
           </div>
@@ -372,24 +371,24 @@ const Portfolio = () => {
           animate={{ opacity: isVisible.certifications ? 1 : 0, y: isVisible.certifications ? 0 : 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 dark:text-blue-400">Certifications</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-blue-400">Certifications</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="transition-all duration-300 hover:shadow-xl">
+            <Card className="transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:text-gray-200">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Python</CardTitle>
-                <CardDescription>PREPINSTA</CardDescription>
+                <CardDescription className="dark:text-gray-400">PREPINSTA</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>Comprehensive course covering Python fundamentals and advanced concepts.</p>
+                <p className="dark:text-gray-300">Comprehensive course covering Python fundamentals and advanced concepts.</p>
               </CardContent>
             </Card>
-            <Card className="transition-all duration-300 hover:shadow-xl">
+            <Card className="transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:text-gray-200">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Web Development</CardTitle>
-                <CardDescription>PREPINSTA</CardDescription>
+                <CardDescription className="dark:text-gray-400">PREPINSTA</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>In-depth training on modern web development technologies and practices.</p>
+                <p className="dark:text-gray-300">In-depth training on modern web development technologies and practices.</p>
               </CardContent>
             </Card>
           </div>
@@ -402,12 +401,12 @@ const Portfolio = () => {
           animate={{ opacity: isVisible.interests ? 1 : 0, y: isVisible.interests ? 0 : 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 dark:text-blue-400">Interests</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-blue-400">Interests</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {['Music Appreciation', 'Travel and Exploration', 'Competitive Gaming'].map((interest, index) => (
               <motion.span 
                 key={index} 
-                className="bg-blue-100 text-blue-800 text-lg font-semibold px-4 py-2 rounded-full dark:bg-blue-200 dark:text-blue-800 transition-all duration-300 hover:bg-blue-200 hover:scale-105"
+                className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-lg font-semibold px-4 py-2 rounded-full transition-all duration-300 hover:bg-blue-200 dark:hover:bg-blue-800 hover:scale-105"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -416,16 +415,16 @@ const Portfolio = () => {
             ))}
           </div>
         </motion.section>
-        </main>
+      </main>
 
-<footer className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <p className="text-2xl font-bold mb-4">&copy; 2024 Ashritha Ankola. All rights reserved.</p>
-    <p className="mb-6">Created with React, Tailwind CSS, and ❤️</p>
-    <div className="flex justify-center space-x-6">
-    <motion.a 
+      <footer className="bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-blue-900 dark:to-purple-900 text-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-2xl font-bold mb-4">&copy; 2024 Ashritha Ankola. All rights reserved.</p>
+          <p className="mb-6">Created with React, Tailwind CSS, and ❤️</p>
+          <div className="flex justify-center space-x-6">
+            <motion.a 
               href="mailto:Ashritha.ankola236@gmail.com" 
-              className="hover:text-indigo-200 transition-colors duration-300"
+              className="hover:text-indigo-200 dark:hover:text-blue-300 transition-colors duration-300"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
             >
@@ -435,7 +434,7 @@ const Portfolio = () => {
               href="https://www.linkedin.com/in/ashritha-ankola-14670724a/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="hover:text-indigo-200 transition-colors duration-300"
+              className="hover:text-indigo-200 dark:hover:text-blue-300 transition-colors duration-300"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
             >
@@ -445,7 +444,7 @@ const Portfolio = () => {
               href="https://github.com/AshrithaAnkola" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="hover:text-indigo-200 transition-colors duration-300"
+              className="hover:text-indigo-200 dark:hover:text-blue-300 transition-colors duration-300"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
             >
