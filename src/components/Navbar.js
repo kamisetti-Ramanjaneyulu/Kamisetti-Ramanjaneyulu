@@ -26,12 +26,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <span className="text-white font-bold text-lg">Admin Dashboard</span>
+              <span className="text-white font-bold text-lg">Dashboard</span>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <NavLink to="/AddJob">AddJob</NavLink>
-                <NavLink to="/AddBlog">AddBlogs</NavLink>
+                <NavLink to="/Home">Home</NavLink>
+                <NavLink to="/Add">Add notice</NavLink>
 
               </div>
             </div>
