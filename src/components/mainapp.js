@@ -260,7 +260,7 @@ const Portfolio = () => {
     }
   ];
 
-  const navItems = ['hero', 'about', 'experience', 'projects', 'skills', 'education', 'contact'];
+  const navItems = ['Home', 'about', 'experience', 'projects', 'skills', 'education', 'contact'];
 
   return (
     <div className={`min-h-screen ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 to-gray-800 text-gray-200' : 'bg-gradient-to-br from-gray-100 to-indigo-50 text-gray-800'} transition-colors duration-500`}>
@@ -688,7 +688,7 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p>&copy; 2024 Kamisetti Ramanjaneyulu. All rights reserved.</p>
           <motion.a 
-            href="#" 
+            href="https://drive.google.com/file/d/13MtCAnGu8pBsQar2WxxpAG8UwFHkj9Sc/view?usp=sharing" 
             className={`inline-block mt-2 ${theme === 'dark' ? 'text-blue-400 hover:text-blue-300' : 'text-indigo-600 hover:text-indigo-500'}`}
             whileHover={{ scale: 1.1 }}
           >
