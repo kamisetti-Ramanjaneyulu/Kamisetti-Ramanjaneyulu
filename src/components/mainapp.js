@@ -191,23 +191,23 @@ const Portfolio = () => {
   // Your existing data objects here (experienceData, projectsData, etc.)
   const experienceData = [
     {
-      title: "Web Developer Intern",
+      title: "Software Development Engineer",
       company: "Ravuru Tech Pvt Ltd",
-      date: "May 2024 - Present",
+      date: "June 2024 - January 2025",
       points: [
-        "Developing React.js web applications with Firebase backend, optimizing performance",
-        "Led development of AitGiant, a learning management system",
-        "Designed and developed the official website for TrancheTechTre using React.js, Tailwind CSS, and Firebase"
+        "Developed scalable web applications using React.js, Tailwind CSS, and Firebase",
+        "Built AitGiant, an interactive learning platform with course modules and real-time progress tracking",
+        "Designed and deployed a student management system for a music institution platform"
       ]
     },
     {
       title: "Machine Learning Intern",
       company: "NIT Puducherry",
-      date: "Jan 2024 - Apr 2024",
+      date: "January 2024 - April 2024",
       points: [
-        "Led skin disease classification project achieving 96% accuracy with Inception v3",
-        "Published in IEEE Xplore: 'Multi-Class Skin Disease Classification' (2024)",
-        "Implemented advanced CNNs for 23-class problem using 15,000-image dataset"
+        "Developed a multi-class skin disease classification system with 96% accuracy using CNNs (InceptionV3, ResNet, MobileNet)",
+        "Processed a medical image dataset of 15,000 images covering 23 disease categories",
+        "Published research in IEEE Xplore: “Multi-Class Skin Disease Classification” (2024)"
       ]
     }
   ];
@@ -215,17 +215,18 @@ const Portfolio = () => {
   const projectsData = [
     {
       title: "Multi-Class Skin Disease Classification System",
-      description: "Pioneered CNN-based system for early detection of 23 skin diseases, achieving 96% accuracy with Inception v3.",
-      techStack: ["Python", "TensorFlow", "CNN", "Deep Learning"],
+      description: "Engineered CNN-based system for classifying 23 skin diseases with 96% accuracy using InceptionV3, MobileNet, and ResNet. Published in IEEE Xplore (2024).",
+      techStack: ["Python", "TensorFlow", "InceptionV3", "CNN", "Deep Learning"],
       link: "https://ieeexplore.ieee.org/document/10627847"
     },
     {
-      title: "Personal Portfolio Website",
-      description: "Crafted responsive portfolio using modern web technologies, optimized for performance.",
-      techStack: ["React", "Tailwind CSS", "Framer Motion", "Firebase"],
-      link: "#"
+      title: "DocuWorm - AI-Powered Document Analysis Tool",
+      description: "Built an AI-powered document analysis tool using machine learning and NLP, with Google’s Generative AI for PDF processing and a responsive UI for result visualization.",
+      techStack: ["Machine Learning", "NLP", "React", "Tailwind CSS", "Generative AI"],
+      link: "https://employee-managment-one.vercel.app/"
     }
-  ];
+  ]
+  ;
 
   const skillsData = {
     "Programming Languages": ["Python", "JavaScript"],

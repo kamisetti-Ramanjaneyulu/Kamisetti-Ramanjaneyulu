@@ -270,30 +270,20 @@ const Portfolio = () => {
         >
           <h2 className="text-4xl font-bold mb-6 text-center text-indigo-600 dark:text-blue-400">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Project 
-              title="Employee Management System (EMS)"
-              description="Full-stack application using HTML, Tailwind CSS, ReactJS, and Firebase with CRUD operations for efficient employee data management."
-              tags={['React', 'Firebase', 'Tailwind CSS']}
-              link="https://employee-managment-one.vercel.app/"
-            />
-            <Project 
-              title="API Integration in ReactJS"
-              description="Web application demonstrating proficiency in API integration using React, showcasing dynamic data fetching and state management."
-              tags={['React', 'API Integration', 'JavaScript']}
-              link="https://startling-belekoy-ca26c9.netlify.app/"
-            />
-            <Project 
-              title="ENGYAAN - Engage in Learning"
-              description="E-learning platform using ReactJS for front-end and NodeJS for back-end with user authentication and course management features."
-              tags={['React', 'Node.js', 'Express']}
-              link={null}
-            />
-            <Project 
-              title="Face Recognition from Dataframes Using ML"
-              description="Implemented a machine learning model for facial recognition using Python and IDLE-Python for development and testing."
-              tags={['Python', 'Machine Learning']}
-              link={null}
-            />
+          <Project 
+            title="Multi-Class Skin Disease Classification System"
+            description="CNN-based detection system for 23 skin diseases achieving 96% accuracy using transfer learning with InceptionV3, MobileNet, and ResNet. Published in IEEE Xplore (2024)."
+            tags={['CNN', 'Transfer Learning', 'InceptionV3', 'IEEE']}
+            link="https://ieeexplore.ieee.org/document/XXXXX" // Replace with actual link if available
+          />
+
+          <Project 
+            title="DocuWorm - AI-Powered Document Analysis Tool"
+            description="Developed an intelligent document analysis tool using ML and NLP to process PDFs with Google's Generative AI, featuring a responsive UI for visualizing results."
+            tags={['Machine Learning', 'NLP', 'Generative AI']}
+            link="https://employee-managment-one.vercel.app/" // Or your actual deployed link
+          />
+
           </div>
         </motion.section>
 
